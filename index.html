@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>WellSkill Gurukul | Scheduled Maintenance & Platform Upgrade</title>
+  <meta name="description" content="WellSkill Gurukul is currently undergoing scheduled platform upgrades to bring you next-generation skill development programs. We will be back live soon.">
+  <meta name="keywords" content="WellSkill Gurukul, wellskillgurukul.co.in, online learning, skill development, career upgrade, masterclasses">
+  <meta name="author" content="WellSkill Gurukul">
+  <meta name="theme-color" content="#070b19">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wellskillgurukul.co.in/">
+  <meta property="og:title" content="WellSkill Gurukul | Platform Upgrade & Launching Soon">
+  <meta property="og:description" content="We are upgrading our platform to provide an exceptional learning experience. Launching in 7 days!">
+  <meta property="og:image" content="logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Three.js for 3D Interactive Visuals -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <!-- 3D Canvas Background -->
+  <div id="canvas3d-container">
+    <canvas id="webgl-canvas"></canvas>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Main App Wrapper -->
+  <div class="app-wrapper">
+    
+    <!-- Top Navigation / Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <a href="https://wellskillgurukul.co.in" class="brand-link" title="WellSkill Gurukul">
+          <div class="logo-box">
+            <img src="logo.png" alt="WellSkill Gurukul Logo" class="brand-logo" id="main-logo" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';">
+            <div class="logo-fallback" id="logo-fallback">
+              <span class="fallback-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+            </div>
+          </div>
+          <div class="brand-info">
+            <h1 class="brand-title">WellSkill <span>Gurukul</span></h1>
+            <span class="brand-domain">wellskillgurukul.co.in</span>
+          </div>
+        </a>
+
+        <div class="header-actions">
+          <div class="status-indicator-badge">
+            <span class="pulse-dot"></span>
+            <span class="status-text">System Upgrade Active</span>
+          </div>
+          <button class="sound-toggle-btn" id="audio-toggle" title="Toggle Sound Ambience" aria-label="Toggle sound ambience">
+            <i class="fa-solid fa-volume-xmark" id="audio-icon"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-content">
+      <div class="content-container">
+
+        <!-- Hero Notice Section -->
+        <section class="hero-section">
+          <div class="maintenance-pill">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <span>Scheduled Maintenance & Ecosystem Upgrade</span>
+          </div>
+
+          <h2 class="hero-heading">
+            Building the Next-Gen <br>
+            <span class="gradient-text">Skill Revolution</span> for You
+          </h2>
+
+          <p class="hero-subtext">
+            We are performing major infrastructure and curriculum platform enhancements at <strong>wellskillgurukul.co.in</strong>. Our team is fine-tuning an ultra-fast, AI-integrated learning portal to accelerate your career.
+          </p>
+        </section>
+
+        <!-- 3D Countdown Clock Section -->
+        <section class="countdown-section" aria-label="Countdown to Launch">
+          <div class="countdown-header">
+            <span class="countdown-label"><i class="fa-regular fa-clock"></i> Platform Re-Opening In</span>
+            <span class="countdown-target" id="target-date-display">Target Date: Synchronizing...</span>
+          </div>
+
+          <div class="countdown-grid">
+            <!-- Days Box -->
+            <div class="countdown-card tilt-card" data-tilt>
+              <div class="ring-wrapper">
+                <svg class="progress-ring" width="130" height="130" viewBox="0 0 130 130">
+                  <circle class="ring-bg" cx="65" cy="65" r="54" />
+                  <circle class="ring-fill" id="ring-days" cx="65" cy="65" r="54" stroke-dasharray="339.292" stroke-dashoffset="0" />
+                </svg>
+                <div class="timer-digits">
+                  <span class="digit-value" id="days-val">07</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span class="unit-label">DAYS</span>
+                <span class="unit-sub">Remaining</span>
+              </div>
+              <div class="card-glass-shine"></div>
+            </div>
+
+            <!-- Hours Box -->
+            <div class="countdown-card tilt-card" data-tilt>
+              <div class="ring-wrapper">
+                <svg class="progress-ring" width="130" height="130" viewBox="0 0 130 130">
+                  <circle class="ring-bg" cx="65" cy="65" r="54" />
+                  <circle class="ring-fill" id="ring-hours" cx="65" cy="65" r="54" stroke-dasharray="339.292" stroke-dashoffset="0" />
+                </svg>
+                <div class="timer-digits">
+                  <span class="digit-value" id="hours-val">00</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span class="unit-label">HOURS</span>
+                <span class="unit-sub">Cycle</span>
+              </div>
+              <div class="card-glass-shine"></div>
+            </div>
+
+            <!-- Minutes Box -->
+            <div class="countdown-card tilt-card" data-tilt>
+              <div class="ring-wrapper">
+                <svg class="progress-ring" width="130" height="130" viewBox="0 0 130 130">
+                  <circle class="ring-bg" cx="65" cy="65" r="54" />
+                  <circle class="ring-fill" id="ring-mins" cx="65" cy="65" r="54" stroke-dasharray="339.292" stroke-dashoffset="0" />
+                </svg>
+                <div class="timer-digits">
+                  <span class="digit-value" id="mins-val">00</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span class="unit-label">MINUTES</span>
+                <span class="unit-sub">Realtime</span>
+              </div>
+              <div class="card-glass-shine"></div>
+            </div>
+
+            <!-- Seconds Box -->
+            <div class="countdown-card tilt-card active-second" data-tilt>
+              <div class="ring-wrapper">
+                <svg class="progress-ring" width="130" height="130" viewBox="0 0 130 130">
+                  <circle class="ring-bg" cx="65" cy="65" r="54" />
+                  <circle class="ring-fill ring-sec" id="ring-secs" cx="65" cy="65" r="54" stroke-dasharray="339.292" stroke-dashoffset="0" />
+                </svg>
+                <div class="timer-digits">
+                  <span class="digit-value accent" id="secs-val">00</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span class="unit-label">SECONDS</span>
+                <span class="unit-sub">Live Ticking</span>
+              </div>
+              <div class="card-glass-shine"></div>
+            </div>
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="countdown-actions">
+            <button class="btn-secondary" id="calendar-btn" title="Add Launch Event to Google Calendar">
+              <i class="fa-solid fa-calendar-plus"></i> Set Calendar Reminder
+            </button>
+            <a href="https://wa.me/?text=WellSkill%20Gurukul%20(wellskillgurukul.co.in)%20is%20launching%20its%20upgraded%20skill%20platform%20in%207%20days!%20Check%20it%20out." target="_blank" rel="noopener noreferrer" class="btn-secondary" title="Share launch countdown on WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i> Share on WhatsApp
+            </a>
+          </div>
+        </section>
+
+        <!-- Live Maintenance Progress Tracker -->
+        <section class="progress-section tilt-card" data-tilt>
+          <div class="section-top">
+            <div class="tracker-title">
+              <div class="icon-circle"><i class="fa-solid fa-sliders"></i></div>
+              <div>
+                <h3>System Maintenance Progress</h3>
+                <p class="tracker-sub">Live deployment status across all core modules</p>
+              </div>
+            </div>
+            <div class="percentage-badge" id="overall-percent">88% Complete</div>
+          </div>
+
+          <!-- Progress Bar -->
+          <div class="progress-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-fill" style="width: 88%;">
+              <div class="progress-glimmer"></div>
+            </div>
+          </div>
+
+          <!-- Milestones List -->
+          <div class="milestones-grid">
+            <div class="milestone-item completed">
+              <div class="ms-icon"><i class="fa-solid fa-check"></i></div>
+              <div class="ms-info">
+                <span class="ms-name">Cloud Infrastructure</span>
+                <span class="ms-status">100% Deployed</span>
+              </div>
+            </div>
+
+            <div class="milestone-item completed">
+              <div class="ms-icon"><i class="fa-solid fa-check"></i></div>
+              <div class="ms-info">
+                <span class="ms-name">Security & SSL 2.0</span>
+                <span class="ms-status">100% Hardened</span>
+              </div>
+            </div>
+
+            <div class="milestone-item in-progress">
+              <div class="ms-icon"><i class="fa-solid fa-arrows-rotate fa-spin"></i></div>
+              <div class="ms-info">
+                <span class="ms-name">Course Portal & LMS</span>
+                <span class="ms-status">85% Syncing</span>
+              </div>
+            </div>
+
+            <div class="milestone-item upcoming">
+              <div class="ms-icon"><i class="fa-regular fa-circle-dot"></i></div>
+              <div class="ms-info">
+                <span class="ms-name">Final Speed Auditing</span>
+                <span class="ms-status">Queue Ready</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-glass-shine"></div>
+        </section>
+
+        <!-- Subscription & Notification Box -->
+        <section class="subscribe-section tilt-card" id="notify-card" data-tilt>
+          <div class="subscribe-content">
+            <div class="subscribe-header">
+              <div class="bell-circle"><i class="fa-solid fa-bell fa-shake"></i></div>
+              <div class="subscribe-texts">
+                <h3>Be the First to Know When We Launch</h3>
+                <p>Enter your email below to get an instant VIP notification & exclusive early-bird bonus course access.</p>
+              </div>
+            </div>
+
+            <form class="notify-form" id="notify-form" novalidate>
+              <div class="input-wrapper">
+                <i class="fa-regular fa-envelope input-icon"></i>
+                <input 
+                  type="email" 
+                  id="email-input" 
+                  class="email-input" 
+                  placeholder="Enter your email address..." 
+                  required 
+                  autocomplete="email"
+                  aria-label="Your email address"
+                >
+                <button type="submit" class="btn-primary" id="submit-btn">
+                  <span class="btn-text">Notify Me</span>
+                  <i class="fa-solid fa-arrow-right btn-icon"></i>
+                  <span class="btn-spinner" id="btn-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i></span>
+                </button>
+              </div>
+              <div class="form-feedback" id="form-feedback" role="alert"></div>
+            </form>
+
+            <div class="form-footer-notes">
+              <span><i class="fa-solid fa-shield-halved"></i> 100% Privacy. Zero Spam.</span>
+              <span><i class="fa-solid fa-gift"></i> Includes ₹999 Welcome Course Credit on Launch</span>
+            </div>
+          </div>
+          <div class="card-glass-shine"></div>
+        </section>
+
+        <!-- Direct Contact & Help Desk -->
+        <section class="contact-strip-section">
+          <div class="contact-grid">
+            <a href="mailto:support@wellskillgurukul.co.in" class="contact-card" title="Email Support">
+              <div class="contact-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+              <div class="contact-detail">
+                <span class="contact-title">Official Inquiries</span>
+                <span class="contact-val">support@wellskillgurukul.co.in</span>
+              </div>
+              <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </a>
+
+            <a href="https://wa.me/919999999999?text=Hi%20WellSkill%20Gurukul%20Team%2C%20I%20have%20an%20urgent%20inquiry." target="_blank" rel="noopener noreferrer" class="contact-card" title="WhatsApp Help Desk">
+              <div class="contact-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="contact-detail">
+                <span class="contact-title">Direct WhatsApp Desk</span>
+                <span class="contact-val">Chat with Support Team</span>
+              </div>
+              <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand-row">
+         
+
+          
+
+        <div class="footer-bottom-row">
+          <p class="copyright-text">
+            &copy; 2026 <strong>wellskillgurukul.co.in</strong>. All Rights Reserved. Scheduled Platform Maintenance in Progress.
+          </p>
+         
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-notification" class="toast-popup" role="status" aria-live="polite">
+    <div class="toast-icon" id="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-body">
+      <h5 id="toast-title">Subscribed!</h5>
+      <p id="toast-message">We'll alert you the moment the platform goes live.</p>
+    </div>
+    <button class="toast-close" id="toast-close" aria-label="Close Notification"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>
