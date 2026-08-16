@@ -31,7 +31,7 @@
     <div class="container">
       <nav class="navbar" aria-label="Main Navigation">
         <a href="index.html" class="brand-box" title="Well Skill Gurukul Home">
-          <img src="logo.png" alt="Well Skill Gurukul Logo" class="brand-logo-img" width="48" height="48">
+          <img src="logo.png" alt="Well Skill Gurukul Logo" class="brand-logo-img" width="60" height="60">
           <div class="brand-text">
             <span class="brand-title">Well Skill <span>Gurukul</span></span>
             <span class="brand-tagline">Learn • Practice • Transform • Lead</span>
@@ -64,7 +64,7 @@
     <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
       <div class="mobile-drawer-header">
         <a href="index.html" class="brand-box">
-          <img src="logo.png" alt="Well Skill Gurukul Logo" class="brand-logo-img" width="44" height="44" style="height: 44px; width: 44px;">
+          <img src="logo.png" alt="Well Skill Gurukul Logo" class="brand-logo-img" width="52" height="52" style="height: 52px; width: 52px;">
           <div class="brand-text">
             <span class="brand-title">Well Skill <span>Gurukul</span></span>
           </div>
