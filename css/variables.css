@@ -1,0 +1,121 @@
+/**
+ * Well Skill Gurukul — Design Tokens & Variables
+ * Brand Palette derived directly from logo.png:
+ * Primary: Academic Heritage Blue (#0c3b6d / #135189)
+ * Secondary: Wellness Leaf/Forest Green (#23713a / #2e8b57)
+ * Warm Accent: Golden Amber (#d97706 / #f59e0b)
+ * Neutrals: Warm Ivory / Sand (#fdfbf7, #f7f4ed, #f1ede4)
+ */
+
+:root {
+  /* Brand Core Colors */
+  --color-primary: #0c3b6d;
+  --color-primary-dark: #072344;
+  --color-primary-light: #16569a;
+  --color-primary-soft: rgba(12, 59, 109, 0.08);
+  --color-primary-glow: rgba(12, 59, 109, 0.15);
+
+  --color-secondary: #23713a;
+  --color-secondary-dark: #185229;
+  --color-secondary-light: #2e8b57;
+  --color-secondary-soft: rgba(35, 113, 58, 0.09);
+  --color-secondary-glow: rgba(35, 113, 58, 0.18);
+
+  --color-accent: #d97706;
+  --color-accent-light: #f59e0b;
+  --color-accent-soft: rgba(217, 119, 6, 0.1);
+
+  /* Backgrounds & Neutrals */
+  --bg-page: #fdfbf7;
+  --bg-surface: #ffffff;
+  --bg-surface-alt: #f7f4ed;
+  --bg-surface-elevated: #ffffff;
+  --bg-subtle: #f1ede4;
+  --bg-dark-section: #091c33;
+  --bg-dark-surface: #102a4a;
+
+  /* Typography Colors */
+  --text-main: #14212e;
+  --text-heading: #0c1a29;
+  --text-muted: #4b5868;
+  --text-light: #6b7a8d;
+  --text-inverse: #ffffff;
+  --text-inverse-muted: #d1dce7;
+  --text-brand: #0c3b6d;
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(12, 59, 109, 0.08);
+  --border-medium: rgba(12, 59, 109, 0.16);
+  --border-strong: rgba(12, 59, 109, 0.28);
+  --border-inverse: rgba(255, 255, 255, 0.15);
+
+  /* Typography Families */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-quote: 'Playfair Display', Georgia, serif;
+
+  /* Type Scale */
+  --text-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
+  --text-sm: clamp(0.8438rem, 0.81rem + 0.18vw, 0.9375rem);
+  --text-base: clamp(0.9375rem, 0.91rem + 0.2vw, 1.0625rem);
+  --text-md: clamp(1.0625rem, 1rem + 0.35vw, 1.1875rem);
+  --text-lg: clamp(1.1875rem, 1.1rem + 0.5vw, 1.375rem);
+  --text-xl: clamp(1.375rem, 1.25rem + 0.75vw, 1.75rem);
+  --text-2xl: clamp(1.6875rem, 1.5rem + 1.1vw, 2.25rem);
+  --text-3xl: clamp(2rem, 1.75rem + 1.5vw, 3rem);
+  --text-4xl: clamp(2.375rem, 2rem + 2vw, 3.875rem);
+  --text-display: clamp(2.75rem, 2.2rem + 2.8vw, 4.75rem);
+
+  /* Spacing */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+
+  /* Layout Containers */
+  --container-sm: 768px;
+  --container-md: 1024px;
+  --container-lg: 1240px;
+  --container-xl: 1400px;
+  --container-padding: clamp(1.25rem, 4vw, 2.5rem);
+
+  /* Border Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-full: 9999px;
+
+  /* Box Shadows */
+  --shadow-subtle: 0 2px 8px rgba(12, 59, 109, 0.04);
+  --shadow-sm: 0 4px 14px rgba(12, 59, 109, 0.06);
+  --shadow-md: 0 8px 24px rgba(12, 59, 109, 0.08);
+  --shadow-lg: 0 16px 36px rgba(12, 59, 109, 0.11);
+  --shadow-xl: 0 24px 50px rgba(12, 59, 109, 0.14);
+  --shadow-glow-blue: 0 0 30px rgba(12, 59, 109, 0.25);
+  --shadow-glow-green: 0 0 30px rgba(35, 113, 58, 0.25);
+
+  /* Transitions & Animation Timings */
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-spring: 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Z-Index Layers */
+  --z-negative: -1;
+  --z-base: 1;
+  --z-sticky: 100;
+  --z-topbar: 110;
+  --z-header: 120;
+  --z-mobile-drawer: 200;
+  --z-modal: 300;
+  --z-toast: 400;
+}

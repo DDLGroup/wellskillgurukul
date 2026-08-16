@@ -1,0 +1,45 @@
+# ==============================================================================
+# Robots.txt for Well Skill Gurukul
+# Website: https://wellskillgurukul.co.in/
+# ==============================================================================
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /services.html
+Allow: /gallery.html
+Allow: /contact.html
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+Allow: /logo.png
+Allow: /favicon.png
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /sitemap.xml
+
+# LLM & AI Crawlers (Allowed for AI search engines)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# Sitemap Location
+Sitemap: https://wellskillgurukul.co.in/sitemap.xml
