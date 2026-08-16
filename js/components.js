@@ -31,7 +31,7 @@
     <div class="container">
       <nav class="navbar" aria-label="Main Navigation">
         <a href="index.html" class="brand-box" title="Well Skill Gurukul Home">
-          <img src="logo.png" alt="Well Skill Gurukul Logo" class="brand-logo-img">
+          <img src="logo.png" alt="Well Skill Gurukul Logo" class="brand-logo-img" width="48" height="48">
           <div class="brand-text">
             <span class="brand-title">Well Skill <span>Gurukul</span></span>
             <span class="brand-tagline">Learn • Practice • Transform • Lead</span>
@@ -64,7 +64,7 @@
     <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
       <div class="mobile-drawer-header">
         <a href="index.html" class="brand-box">
-          <img src="logo.png" alt="Well Skill Gurukul Logo" class="brand-logo-img" style="height: 44px;">
+          <img src="logo.png" alt="Well Skill Gurukul Logo" class="brand-logo-img" width="44" height="44" style="height: 44px; width: 44px;">
           <div class="brand-text">
             <span class="brand-title">Well Skill <span>Gurukul</span></span>
           </div>
@@ -131,7 +131,7 @@
       <div class="footer-grid">
         <div class="footer-col footer-col-brand">
           <a href="index.html" class="footer-brand-box" title="Well Skill Gurukul Home">
-            <img src="logo.png" alt="Well Skill Gurukul Logo" class="footer-brand-logo">
+            <img src="logo.png" alt="Well Skill Gurukul Logo" class="footer-brand-logo" width="160" height="52">
           </a>
           <p class="footer-brand-desc">
             Well Skill Gurukul is a professional education and skill-development institute dedicated to creating the next generation of skilled professionals in beauty, wellness, health, lifestyle, and personal development.
@@ -142,7 +142,7 @@
         </div>
 
         <div class="footer-col">
-          <h4 class="footer-col-title">Navigation</h4>
+          <h3 class="footer-col-title">Navigation</h3>
           <ul class="footer-links-list">
             <li><a href="index.html" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
             <li><a href="about.html" class="footer-link"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
@@ -153,7 +153,7 @@
         </div>
 
         <div class="footer-col">
-          <h4 class="footer-col-title">Programs & Services</h4>
+          <h3 class="footer-col-title">Programs & Services</h3>
           <ul class="footer-links-list">
             <li><a href="services.html#service-1" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Nutrition & Lifestyle Program</a></li>
             <li><a href="services.html#service-2" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Corporate Wellness Program</a></li>
@@ -165,7 +165,7 @@
         </div>
 
         <div class="footer-col">
-          <h4 class="footer-col-title">Contact & Helpdesk</h4>
+          <h3 class="footer-col-title">Contact & Helpdesk</h3>
           <div class="footer-contact-item wa-item">
             <i class="fa-brands fa-whatsapp"></i>
             <div>

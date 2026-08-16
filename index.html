@@ -43,10 +43,12 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
 
-  <!-- Performance & Fonts -->
+  <!-- Performance Preloads & Optimizations -->
+  <link rel="preload" as="image" href="assets/images/hero-1-wellness-edu.webp" type="image/webp" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/global.css">
@@ -175,7 +177,10 @@
         <!-- Slide 1: Wellness Education -->
         <div class="hero-slide is-active" data-slide="1">
           <div class="hero-slide-bg">
-            <img src="assets/images/hero-1-wellness-edu.jpg" alt="Modern Wellness Academy Workshop at Well Skill Gurukul" fetchpriority="high">
+            <picture>
+              <source srcset="assets/images/hero-1-wellness-edu.webp" type="image/webp">
+              <img src="assets/images/hero-1-wellness-edu.jpg" alt="Modern Wellness Academy Workshop at Well Skill Gurukul" width="1600" height="900" fetchpriority="high">
+            </picture>
           </div>
           <div class="hero-slide-overlay"></div>
           <div class="container">
@@ -200,7 +205,10 @@
         <!-- Slide 2: Professional Coaching -->
         <div class="hero-slide" data-slide="2">
           <div class="hero-slide-bg">
-            <img src="assets/images/hero-2-pro-coach.jpg" alt="Professional Wellness Coaching & Mentorship" loading="lazy">
+            <picture>
+              <source srcset="assets/images/hero-2-pro-coach.webp" type="image/webp">
+              <img src="assets/images/hero-2-pro-coach.jpg" alt="Professional Wellness Coaching & Mentorship" width="1600" height="900" loading="lazy">
+            </picture>
           </div>
           <div class="hero-slide-overlay"></div>
           <div class="container">
@@ -225,7 +233,10 @@
         <!-- Slide 3: Nutrition & Lifestyle -->
         <div class="hero-slide" data-slide="3">
           <div class="hero-slide-bg">
-            <img src="assets/images/hero-3-nutrition.jpg" alt="Nutrition and Lifestyle Consultation Science" loading="lazy">
+            <picture>
+              <source srcset="assets/images/hero-3-nutrition.webp" type="image/webp">
+              <img src="assets/images/hero-3-nutrition.jpg" alt="Nutrition and Lifestyle Consultation Science" width="1600" height="900" loading="lazy">
+            </picture>
           </div>
           <div class="hero-slide-overlay"></div>
           <div class="container">
@@ -250,7 +261,10 @@
         <!-- Slide 4: Beauty & Wellness Careers -->
         <div class="hero-slide" data-slide="4">
           <div class="hero-slide-bg">
-            <img src="assets/images/hero-4-beauty-spa.jpg" alt="Aesthetic, Beauty & Spa Therapist Training" loading="lazy">
+            <picture>
+              <source srcset="assets/images/hero-4-beauty-spa.webp" type="image/webp">
+              <img src="assets/images/hero-4-beauty-spa.jpg" alt="Aesthetic, Beauty & Spa Therapist Training" width="1600" height="900" loading="lazy">
+            </picture>
           </div>
           <div class="hero-slide-overlay"></div>
           <div class="container">
@@ -275,7 +289,10 @@
         <!-- Slide 5: Personal Transformation -->
         <div class="hero-slide" data-slide="5">
           <div class="hero-slide-bg">
-            <img src="assets/images/hero-5-transform.jpg" alt="Mindfulness, Yoga & Personal Transformation Mastery" loading="lazy">
+            <picture>
+              <source srcset="assets/images/hero-5-transform.webp" type="image/webp">
+              <img src="assets/images/hero-5-transform.jpg" alt="Mindfulness, Yoga & Personal Transformation Mastery" width="1600" height="900" loading="lazy">
+            </picture>
           </div>
           <div class="hero-slide-overlay"></div>
           <div class="container">
@@ -352,7 +369,7 @@
           </div>
           <div>
             <div style="position: relative; border-radius: var(--radius-2xl); overflow: hidden; box-shadow: var(--shadow-lg);">
-              <img src="assets/images/hero-1-wellness-edu.jpg" alt="Well Skill Gurukul Institute Workshop" style="width: 100%; height: 420px; object-fit: cover;">
+              <img src="assets/images/hero-1-wellness-edu.webp" alt="Well Skill Gurukul Institute Workshop" width="600" height="420" loading="lazy" style="width: 100%; height: 420px; object-fit: cover;">
               <div style="position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; background: rgba(12, 59, 109, 0.9); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 1.25rem; border-radius: var(--radius-lg); color: #ffffff;">
                 <div style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em; color: #34d399; font-weight: 700; margin-bottom: 0.25rem;">
                   Our Commitment
@@ -445,7 +462,7 @@
           <!-- 1. Nutrition & Lifestyle Program -->
           <div class="program-card">
             <div class="program-card-img-wrap">
-              <img src="assets/images/hero-3-nutrition.jpg" alt="Nutrition & Lifestyle Program" loading="lazy">
+              <img src="assets/images/hero-3-nutrition.webp" alt="Nutrition & Lifestyle Program" width="600" height="400" loading="lazy">
               <span class="card-badge">Program 01</span>
             </div>
             <div class="program-card-body">
@@ -467,7 +484,7 @@
           <!-- 2. Corporate Wellness Program -->
           <div class="program-card">
             <div class="program-card-img-wrap">
-              <img src="assets/images/prog-corporate.jpg" alt="Corporate Wellness Program" loading="lazy">
+              <img src="assets/images/prog-corporate.webp" alt="Corporate Wellness Program" width="600" height="400" loading="lazy">
               <span class="card-badge">Program 02</span>
             </div>
             <div class="program-card-body">
@@ -489,7 +506,7 @@
           <!-- 3. Weightloss Program -->
           <div class="program-card">
             <div class="program-card-img-wrap">
-              <img src="assets/images/hero-2-pro-coach.jpg" alt="Weightloss Program" loading="lazy">
+              <img src="assets/images/hero-2-pro-coach.webp" alt="Weightloss Program" width="600" height="400" loading="lazy">
               <span class="card-badge">Program 03</span>
             </div>
             <div class="program-card-body">
@@ -511,7 +528,7 @@
           <!-- 4. Certified Nutritionist and Lifestyle Coach -->
           <div class="program-card">
             <div class="program-card-img-wrap">
-              <img src="assets/images/hero-1-wellness-edu.jpg" alt="Certified Nutritionist and Lifestyle Coach" loading="lazy">
+              <img src="assets/images/hero-1-wellness-edu.webp" alt="Certified Nutritionist and Lifestyle Coach" width="600" height="400" loading="lazy">
               <span class="card-badge" style="background: rgba(35, 113, 58, 0.9);">Certification 04</span>
             </div>
             <div class="program-card-body">
@@ -533,7 +550,7 @@
           <!-- 5. Wellness Business Mastery -->
           <div class="program-card">
             <div class="program-card-img-wrap">
-              <img src="assets/images/prog-mentoring.jpg" alt="Wellness Business Mastery" loading="lazy">
+              <img src="assets/images/prog-mentoring.webp" alt="Wellness Business Mastery" width="600" height="400" loading="lazy">
               <span class="card-badge" style="background: rgba(217, 119, 6, 0.9);">Mastery 05</span>
             </div>
             <div class="program-card-body">
@@ -555,7 +572,7 @@
           <!-- 6. Alternative & Integrative Therapy Workshop -->
           <div class="program-card">
             <div class="program-card-img-wrap">
-              <img src="assets/images/prog-panchkarma.jpg" alt="Alternative & Integrative Therapy Workshop" loading="lazy">
+              <img src="assets/images/prog-panchkarma.webp" alt="Alternative & Integrative Therapy Workshop" width="600" height="400" loading="lazy">
               <span class="card-badge" style="background: rgba(12, 59, 109, 0.9);">Workshop 06</span>
             </div>
             <div class="program-card-body">
@@ -600,7 +617,7 @@
           <!-- Expert 1: Dr. Anjali Sharma -->
           <div class="team-card">
             <div class="team-card-img-wrap">
-              <img src="assets/images/team-doctor-naturopathy.jpg" alt="Dr. Anjali Sharma - Senior Naturopathy Doctor" loading="lazy">
+              <img src="assets/images/team-doctor-naturopathy.webp" alt="Dr. Anjali Sharma - Senior Naturopathy Doctor" width="400" height="300" loading="lazy">
             </div>
             <div class="team-card-body">
               <span class="team-card-badge">Naturopathy & Root-Cause</span>
@@ -615,7 +632,7 @@
           <!-- Expert 2: Arjun Verma -->
           <div class="team-card">
             <div class="team-card-img-wrap">
-              <img src="assets/images/team-coach-nutrition.jpg" alt="Arjun Verma - Lead Clinical Nutritionist" loading="lazy">
+              <img src="assets/images/team-coach-nutrition.webp" alt="Arjun Verma - Lead Clinical Nutritionist" width="400" height="300" loading="lazy">
             </div>
             <div class="team-card-body">
               <span class="team-card-badge" style="background: rgba(35, 113, 58, 0.1); color: var(--color-secondary);">Nutrition & Lifestyle</span>
@@ -630,7 +647,7 @@
           <!-- Expert 3: Dr. Radhika Iyer -->
           <div class="team-card">
             <div class="team-card-img-wrap">
-              <img src="assets/images/team-ayurveda-therapist.jpg" alt="Dr. Radhika Iyer - Ayurvedic & Integrative Therapy Specialist" loading="lazy">
+              <img src="assets/images/team-ayurveda-therapist.webp" alt="Dr. Radhika Iyer - Ayurvedic & Integrative Therapy Specialist" width="400" height="300" loading="lazy">
             </div>
             <div class="team-card-body">
               <span class="team-card-badge" style="background: rgba(217, 119, 6, 0.1); color: var(--color-accent);">Ayurveda & Panchkarma</span>
@@ -645,7 +662,7 @@
           <!-- Expert 4: Vikramaditya Sengupta -->
           <div class="team-card">
             <div class="team-card-img-wrap">
-              <img src="assets/images/prog-mentoring.jpg" alt="Vikramaditya Sengupta - Wellness Business Mentor" loading="lazy">
+              <img src="assets/images/prog-mentoring.webp" alt="Vikramaditya Sengupta - Wellness Business Mentor" width="400" height="300" loading="lazy">
             </div>
             <div class="team-card-body">
               <span class="team-card-badge" style="background: rgba(12, 59, 109, 0.1); color: var(--color-primary);">Business Mentoring</span>
