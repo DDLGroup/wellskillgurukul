@@ -3,6 +3,16 @@
  */
 
 /* ==========================================================================
+   MEDIUM DESKTOPS & LAPTOPS (<= 1200px)
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+/* ==========================================================================
    TABLETS & SMALL DESKTOPS (<= 1024px)
    ========================================================================== */
 @media (max-width: 1024px) {
@@ -25,7 +35,7 @@
 
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
   .testimonials-grid {
@@ -262,11 +272,14 @@
 
   .team-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.25rem;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .team-card-img-wrap {
-    height: 260px;
+    height: 280px;
   }
 
   .testimonials-grid {
